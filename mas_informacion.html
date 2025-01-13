@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logoarbol.ico">
+    <title>Más Información | PREPAENLINEA</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e88e5;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 95%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #b3d4fc;
+        }
+
+        .hero {
+            background-image: url('pepe.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .info-section {
+            max-width: 800px;
+            margin: 120px auto 50px;
+            padding: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 40px;
+        }
+
+        .info-item h2 {
+            font-size: 1.8em;
+            color: #1e88e5;
+            margin-bottom: 10px;
+        }
+
+        .info-item p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-align: justify;
+            color: #555;
+        }
+
+        .info-item img {
+            display: block;
+            margin: 15px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e88e5;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SAN CAYETANO LIMPIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planificacion.html">Planificación</a></li>
+                <li><a href="justificacion.html">Justificación</a></li>
+                <li><a href="organizacion.html">Organización</a></li>
+                <li><a href="direccion.html">Dirección</a></li>
+                <li><a href="controlg.html">Control / Gantt</a></li>
+                <li><a href="controlm.html">Control / Medir corregir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>CONOCE MÁS</h1>
+        <p>Proyecto Integrador</p>
+    </section>
+
+    <main class="info-section" id="informacion">
+        <div class="info-item">
+            <h2>Bienvenidos a "Transformando Nuestra Comunidad"</h2>
+            <p>En esta página encontrarás todo lo relacionado con nuestro proyecto integrador, cuyo objetivo es generar un cambio positivo en nuestra comunidad a través de la gestión responsable de la basura y la promoción del reciclaje. Este proyecto surge de la preocupación por el impacto ambiental que generan los residuos mal manejados y la necesidad de involucrar activamente a la comunidad en soluciones sostenibles.</p>
+        </div>
+        <div class="info-item">
+            <h2>¿Qué encontrarás aquí?</h2>
+            <p>
+                <ul>
+                    <li><strong>Diagnóstico de la situación actual:</strong> Un análisis detallado de los principales problemas relacionados con la basura en nuestra comunidad.</li>
+                    <li><strong>Planificación estratégica:</strong> Incluye nuestro cronograma de actividades, diagramas de Gantt y los objetivos trazados.</li>
+                    <li><strong>Justificación:</strong> Explicamos por qué este proyecto es esencial para mejorar nuestra calidad de vida y preservar el medio ambiente.</li>
+                    <li><strong>Organización y dirección:</strong> Presentamos cómo nos hemos organizado como equipo, con roles claros y un enfoque colaborativo.</li>
+                    <li><strong>Acciones concretas:</strong> Detallamos las tareas realizadas y pendientes, enfocadas en la reducción, reutilización y reciclaje de residuos.</li>
+                    <li><strong>Involucramiento comunitario:</strong> Propuestas y actividades diseñadas para fomentar la participación de vecinos, escuelas y comercios.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="info-item">
+            <h2>¡Únete a Nosotros!</h2>
+            <p>Te invitamos a ser parte de este esfuerzo. Juntos, podemos construir un futuro más limpio, sostenible y consciente. 🌱♻️</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Proyecto integrador. Prepa en línea | Concepción RG.</p>
+    </footer>
+</body>
+</html>
+
+

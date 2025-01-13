@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logoarbol.ico">
+    <title>Planificación | PREPAENLINEA</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 10;
+            font-family: Arial, sans-serif;
+            color: #2f4f2f;
+            background-color: #f4f7f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 128, 0, 0.8);
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 95%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a8d5a8;
+        }
+
+        .hero {
+            background-image: url('fondoarbol1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .content-section {
+            display: flex; /* Mantiene la flexibilidad para alinear elementos */
+            flex-direction: row; /* Asegura la alineación horizontal */
+            align-items: flex-start; /* Alinea los elementos en la parte superior */
+            gap: 40px; /* Espacio entre los elementos (imagen y texto) */
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .content-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .content-section img {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content-section p {
+            flex: 1; /* El texto ocupa espacio restante */
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: justify; /* Justifica los párrafos */
+            margin:20; /* Asegura que no haya márgenes entre párrafos */
+        }    
+
+        footer {
+            text-align: center;
+            background-color: rgba(0, 128, 0, 0.8);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .content-section {
+                display: flex; /* Asegúrate de usar flexbox */
+                flex-direction: row; /* Cambia a disposición horizontal */
+                align-items: center; /* Alineación vertical */
+                justify-content: flex-start; /* Alineación horizontal al inicio */
+                gap: 10px; /* Espaciado entre elementos, si lo deseas */
+            }
+
+            .content-section img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SAN CAYETANO LIMPIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planificacion.html">Planificación</a></li>
+                <li><a href="justificacion.html">Justificación</a></li>
+                <li><a href="organizacion.html">Organización</a></li>
+                <li><a href="direccion.html">Dirección</a></li>
+                <li><a href="controlg.html">Control / Gantt</a></li>
+                <li><a href="controlm.html">Control / Medir corregir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>PLANIFICACIÓN</h1>
+        <p>Objetivos y Metas</p>
+    </section>
+
+    <main>
+        <section class="content-section" id="articulos">
+            <img src="rrr.jpg" alt="RRR">
+            <div>
+                <p>El propósito de este proyecto es concienciar a la comunidad de San Cayetano Morelos, Estado de México sobre la importancia de la gestión adecuada de la basura y promover acciones para reducir, reutilizar y reciclar los residuos en nuestra comunidad.</p>
+                <h1>Objetivos específicos:</h1>
+                <p>1. Investigar y analizar la situación actual de la gestión de la basura en nuestra comunidad.</p>
+                <p>2. Identificar las principales fuentes de generación de basura y los impactos ambientales y de salud pública asociados.</p>
+                <p>3. Desarrollar un plan de acción para reducir, reutilizar y reciclar los residuos en nuestra comunidad.</p>
+                <p>4. Implementar el plan de acción y monitorear sus resultados.</p>
+                <p>5. Promover la conciencia y la participación comunitaria en la gestión de la basura.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <img src="edu.jpg" alt="Educación">
+            <div>
+                <p>Beneficios que se logran con este proyecto</p>
+                <h1>Ámbito Social</h1>
+                <p>Mejora de la convivencia comunitaria, fortalecimiento de las redes sociales, promoción de la inclusión y la diversidad.</p>
+                <h1>Ámbito de la Salud</h1>
+                <p>Reducción de enfermedades relacionadas con la basura, mejora de la calidad del aire y del agua, promoción de hábitos saludables.</p>
+                <h1>Ámbito del medio Ambiente</h1>
+                <p>Reducción de la contaminación del suelo, el aire y el agua, conservación de los recursos naturales, protección de la biodiversidad</p>
+                <h1>Ámbito de la Educación</h1>
+                <p>Educación ambiental, desarrollo de habilidades y conocimientos, promoción de la participación ciudadana.</p>
+                
+            </div>
+        </section>
+
+        <section class="content-section">
+            <img src="metas.jpg" alt="Metas">
+            <div>
+                <h1>Metas</h1>
+                <p>1. Crear un comité de limpieza y reciclaje que se reúna mensualmente para planificar y coordinar actividades.</p>
+                <p>2. Incrementar la participación en eventos de limpieza comunitaria a al menos 100 participantes por evento.</p>
+                <p>3. Establecer un sistema de recolección de residuos reciclables en al menos 20 hogares de la comunidad.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Planificación. Prepa en linea | Concepción RG.</p>
+    </footer>
+</body>
+</html>

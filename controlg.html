@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logoarbol.ico">
+    <title>Control / Gantt | PREPAENLINEA</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a67ce;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 95%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d3d2f3;
+        }
+
+        .hero {
+            background-image: url('gg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .ideas-container {
+            margin: 120px auto 50px;
+            padding: 20px;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .idea-box {
+            flex: 1 1 calc(50% - 20px);
+            border: 2px dashed #6a67ce;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .idea-box h2 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #6a67ce;
+        }
+
+        .idea-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .idea-box ul li {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .gantt-section {
+            margin: 50px auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .gantt-section h2 {
+            font-size: 1.8rem;
+            color: #6a67ce;
+            margin-bottom: 20px;
+        }
+
+        .gantt-section img {
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid #6a67ce;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6a67ce;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .idea-box {
+                flex: 1 1 100%;
+            }
+
+            .gantt-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SAN CAYETANO LIMPIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planificacion.html">Planificación</a></li>
+                <li><a href="justificacion.html">Justificación</a></li>
+                <li><a href="organizacion.html">Organización</a></li>
+                <li><a href="direccion.html">Dirección</a></li>
+                <li><a href="controlg.html">Control / Gantt</a></li>
+                <li><a href="controlm.html">Control / Medir corregir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>CONTROL / GANTT</h1>
+        <p>Diagrama de Gantt para gestión del proyecto de residuos</p>
+    </section>
+
+    <main class="ideas-container" id="ideas">
+        <div class="idea-box">
+            <h2>Objetivo del Proyecto</h2>
+            <p>Implementar estrategias efectivas de gestión de residuos en la comunidad para fomentar la educación ambiental y el cuidado del medio ambiente.</p>
+        </div>
+        <div class="idea-box">
+            <h2>Fases del Proyecto</h2>
+            <ul>
+                <li><strong>Primera Fase:</strong> Actividades previas (1 semana) como la creación del equipo y análisis de problemas.</li>
+                <li><strong>Segunda Fase:</strong> Desarrollo (6 meses) con estrategias educativas y alianzas.</li>
+                <li><strong>Tercera Fase:</strong> Concreción (5 días) organizando eventos comunitarios y evaluando resultados.</li>
+            </ul>
+        </div>
+        <div class="idea-box">
+            <h2>Recursos Necesarios</h2>
+            <ul>
+                <li><strong>Materiales:</strong> Folletos, contenedores, kits educativos.</li>
+                <li><strong>Tecnológicos:</strong> Computadoras, software, plataformas educativas.</li>
+                <li><strong>Financieros:</strong> Presupuesto para impresión, transporte y mantenimiento.</li>
+                <li><strong>Humanos:</strong> Voluntarios, especialistas, educadores.</li>
+            </ul>
+        </div>
+        <div class="idea-box">
+            <h2>Impacto Esperado</h2>
+            <ul>
+                <li>Comunidades más conscientes del manejo de residuos.</li>
+                <li>Reducción de basura en espacios públicos.</li>
+                <li>Mayor compromiso ambiental por parte de la población.</li>
+            </ul>
+        </div>
+    </main>
+
+    <section class="gantt-section">
+        <h2>Diagramas de Gantt</h2>
+
+        <h3>Diagrama de Gantt: actividades previas, tiempo 1 semana</h3>
+        <img src="1semana.jpg" alt="Diagrama de Gantt: actividades previas">
+
+        <h3>Diagrama de Gantt: actividades de desarrollo, tiempo 6 meses</h3>
+        <img src="6meses.jpg" alt="Diagrama de Gantt: actividades de desarrollo">
+
+        <h3>Diagrama de Gantt: actividades de concreción, tiempo 5 días</h3>
+        <img src="5dias.jpg" alt="Diagrama de Gantt: actividades de concreción">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Control / Gantt. Prepa en línea | Concepción RG.</p>
+    </footer>
+</body>
+</html>

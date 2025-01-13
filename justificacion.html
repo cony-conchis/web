@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logoarbol.ico">
+    <title>Justificación | PREPAENLINEA</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a67ce;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 95%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d3d2f3;
+        }
+
+        .hero {
+            background-image: url('reduccion.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .ideas-container {
+            margin: 120px auto 50px;
+            padding: 20px;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .idea-box {
+            flex: 1 1 calc(50% - 20px);
+            border: 2px dashed #6a67ce;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .idea-box h2 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #6a67ce;
+        }
+
+        .idea-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .idea-box ul li {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6a67ce;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .idea-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SAN CAYETANO LIMPIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planificacion.html">Planificación</a></li>
+                <li><a href="justificacion.html">Justificación</a></li>
+                <li><a href="organizacion.html">Organización</a></li>
+                <li><a href="direccion.html">Dirección</a></li>
+                <li><a href="controlg.html">Control / Gantt</a></li>
+                <li><a href="controlm.html">Control / Medir corregir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>JUSTIFICACIÓN</h1>
+        <p>Estrategias para mejorar la gestión de residuos</p>
+    </section>
+
+    <main class="ideas-container" id="ideas">
+        <div class="idea-box">
+            <h2>Objetivo general</h2>
+            <ul>
+                <li>Mejorar la gestión de residuos en mi comunidad para reducir la cantidad de basura en las calles y espacios públicos, promover prácticas sostenibles y mejorar la calidad de vida de los habitantes.</li>
+                <li>Mejorar la gestión de residuos en mi comunidad es un objetivo fundamental para reducir la cantidad de basura en las calles y espacios públicos. </li>
+                <li>La comunidad se enfrenta a un problema grave de acumulación de basura en las calles y espacios públicos. Esto no solo es un problema estético, sino que también puede tener graves consecuencias para la salud pública y el medio ambiente.</li>
+            </ul>
+        </div>
+        <div class="idea-box">
+            <h2>Estrategias para mejorar la gestión de residuos</h2>
+            <ul>
+                <li>Implementar un sistema de recolección de residuos eficiente: Esto incluye la implementación de contenedores de basura adecuados y la frecuencia de recolección adecuada.</li>
+                <li>Fomentar la reducción, el reúso y el reciclaje: Esto incluye la implementación de programas de reducción, reúso y reciclaje, así como la educación y la conciencia sobre la importancia de estas prácticas.</li>
+                <li>Fomentar la participación comunitaria: Esto incluye la educación y la conciencia sobre la importancia de la gestión de residuos, así como la participación de la comunidad en la toma de decisiones y la implementación de soluciones.</li>
+            </ul>
+        </div>
+        <div class="idea-box">
+            <h2>Cuáles son las causas del problema</h2>
+            <ul>
+                <li>La falta de educación y conciencia sobre la importancia de la gestión adecuada de residuos contribuye a la acumulación de basura en la comunidad.</li>
+                <li>La falta de recursos y financiamiento para la gestión de residuos y la infraestructura necesaria para su manejo es un obstáculo importante para abordar el problema.</li>
+                <li>La falta de participación comunitaria en la gestión de residuos y la falta de compromiso para mantener la comunidad limpia y saludable también contribuyen al problema.</li>
+            </ul>
+        </div>
+        <div class="idea-box">
+            <h2>Consecuencias del problema</h2>
+            <ul>
+                <li>Impacto en la salud pública, la basura y la contaminación del medio ambiente pueden causar enfermedades y problemas de salud.</li>
+                <li>Impacto en el medio ambiente: La basura y la contaminación del medio ambiente pueden causar daños irreparables al ecosistema y la biodiversidad.</li>
+                <li>Impacto en la economía: La basura y la contaminación del medio ambiente pueden afectar la economía local y nacional, ya que pueden disminuir el turismo, la inversión y el crecimiento económico.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Justificación. Prepa en linea | Concepción RG.</p>
+    </footer>
+</body>
+</html>

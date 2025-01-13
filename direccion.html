@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logoarbol.ico">
+    <title>Dirección | PREPAENLINEA</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: "Roboto", Arial, sans-serif;
+            color: #2f4f2f;
+            background-color: #f4f7f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 128, 0, 0.9);
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 98%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a8d5a8;
+        }
+
+        .hero {
+            background-image: url('recycle.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .content-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .content-section img {
+            flex: 1 1 300px;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section div {
+            flex: 2 1 600px;
+        }
+
+        .content-section h2 {
+            font-size: 2em;
+            color: #2f4f2f;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(0, 128, 0, 0.9);
+            color: white;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-section img {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SAN CAYETANO LIMPIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planificacion.html">Planificación</a></li>
+                <li><a href="justificacion.html">Justificación</a></li>
+                <li><a href="organizacion.html">Organización</a></li>
+                <li><a href="direccion.html">Dirección</a></li>
+                <li><a href="controlg.html">Control / Gantt</a></li>
+                <li><a href="controlm.html">Control / Medir corregir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>DIRECCIÓN</h1>
+        <p>División del trabajo, colaboración y tecnología</p>
+    </section>
+
+    <main>
+        <section class="content-section">
+            <img src="division.jpg" alt="Trabajo en equipo">
+            <div>
+                <h2>División del Trabajo</h2>
+                <p>Una buena dirección comienza con la distribución clara de responsabilidades. En este proyecto, los líderes comunitarios coordinan esfuerzos, motivan a la comunidad y construyen alianzas estratégicas. Los voluntarios participan en actividades prácticas como la limpieza y reciclaje, mientras que los expertos en medio ambiente desarrollan planes de acción y evalúan el impacto ambiental.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <img src="colaboradores.jpg" alt="Colaboración">
+            <div>
+                <h2>Importancia de los Colaboradores</h2>
+                <p>Los colaboradores son fundamentales para el éxito del proyecto. Aportan habilidades y perspectivas únicas que enriquecen las estrategias. Dividir las responsabilidades mejora la productividad y fomenta la innovación. Sin colaboradores, la carga de trabajo sería insostenible, afectando la calidad y la creatividad.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <img src="redes.jpg" alt="Tecnología">
+            <div>
+                <h2>Uso de Tecnología</h2>
+                <p>Redes sociales como Facebook son herramientas poderosas para reclutar colaboradores y mantener a la comunidad informada. Estas plataformas permiten una comunicación efectiva, fortalecen la organización y crean un sentido de comunidad, esenciales para el éxito del proyecto.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dirección. Prepa en línea | Concepción RG.</p>
+    </footer>
+</body>
+</html>
+
